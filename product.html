@@ -10,6 +10,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400&display=swap" rel="stylesheet">
+    <script src="js/index.js"></script>
 </head>
 <body>
       
@@ -46,27 +47,33 @@
         </div>
         <hr>
         <div class="row">
-            <div class="col4">
-                <img id="product-image" src="images/red.jpg">
+            <div class="col4" onclick="detailsswap()">
+            <a href="productdetails.html" onclick="product1()">
+                <img id="product-image1" src="images/red.jpg">
                 <h4 id="product-name">crimson red jacket</h4>
                 <p>Rs 1499</p>
+            </a>
             </div>
             <div class="col4">
                 <a href="productdetails.html">
-                    <img id="product-image" src="images/Ninja Arashi Hoodie.jpg">
+                    <img src="images/Ninja Arashi Hoodie.jpg">
                     <h4 id="product-name">Ninja Arashi Hoodie</h4>
                     <p id="product-price">Rs 1799</p>
                 </a>
             </div>
             <div class="col4">
+            <a href="productdetails.html">
                 <img id="product-image" src="images/blue.jpg">
                 <h4 id="product-name">skyland blue</h4>
                 <p>Rs 899</p>
+            </a>
             </div>
             <div class="col4">
+            <a href="productdetails.html">
                 <img id="product-image" src="images/blackblue.jpg">
                 <h4 id="product-name">Strax Blue/Black</h4>
                 <p>Rs 1099</p>
+            </a>
             </div>
             <div class="col4">
                 <img id="product-image" src="images/winterjacket.jpg">
@@ -159,6 +166,11 @@
             // Redirect to product-details.html with the selected product details
             window.location.href = `productdetails.html?name=${encodeURIComponent(name)}&image=${encodeURIComponent(image)}&price=${encodeURIComponent(price)}`;
         }
+//         function detailsswap()
+// {
+//     var img = document.getElementById('product-image1');
+//     img.src
+// }
     </script>
     </body>
 </html>
