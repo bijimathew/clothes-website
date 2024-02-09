@@ -84,3 +84,22 @@ document.getElementById('productImage').src = productImage || 'default-image.jpg
 // </body>
 
 // </html>
+
+
+const userName = document.querySelector('.loginusername');
+const userNameValue = userName.value;
+
+const email = document.querySelector('.loginPass');
+const emailInput = email.value;
+
+document.querySelector('.loginbtn').addEventListener('click',(e)=>{
+    e.preventDefault();
+
+    const data = {
+        user : userNameValue,
+        email:emailInput
+    }
+
+    console.log(data.user , data.email);
+})
+
